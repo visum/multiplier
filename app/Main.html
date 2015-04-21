@@ -4,13 +4,64 @@
       position: absolute;
       top: 0;
       left: 0;
-      height: 20px;
+      height: 100px;
       width: 100%;
     }
+
+    [tag="container"] {
+      position: absolute;
+      top: 100px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    [tag="problem"] {
+      position: absolute;
+      top: 0;
+      height: 200px;
+      left: 0;
+      right: 200px;
+      background-color: blue;
+    }
+
+    [tag="input"] {
+      position: absolute;
+      top: 200px;
+      bottom: 200px;
+      left: 0;
+      right: 200px;
+      background-color: green;
+    }
+
+    [tag="timer"] {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 200px;
+      background-color: yellow;
+    }
+
+    [tag="feedback"] {
+      position:absolute;
+      bottom: 0;
+      height: 200px;
+      left: 0;
+      right: 200px;
+      background-color: purple;
+    }
+
   </style>
 
   <div tag="top">
     <h1 tag="title">Multiplier!<h1>
+  </div>
+  <div tag="container">
+    <div tag="problem"></div>
+    <div tag="input"></div>
+    <div tag="timer"></div>
+    <div tag="feedback"></div>
   </div>
 
 </div>

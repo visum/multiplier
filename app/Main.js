@@ -10,9 +10,7 @@ BASE.require([
 
     var gameObserver = game.observe();
 
-    gameObserver.onEach(function(e){
-      $title.text(e.message);
-    });
+    
 
     scope.set("game", game);
 
