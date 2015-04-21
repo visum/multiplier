@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Multiplier!</title>
+    <style>
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      [component="app"] {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div component="app/Main.html"></div>
+
+    <script type="text/javascript" src="lib/BASE.js"></script>
+    <script type="text/javascript">
+      BASE.require.loader.setRoot("lib");
+      BASE.require.loader.setNamespace("app", "app");
+      BASE.require(['BASE.web.components']);
+    </script>
+  </body>
+</html>
