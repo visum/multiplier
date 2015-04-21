@@ -22,7 +22,7 @@
       height: 200px;
       left: 0;
       right: 200px;
-      background-color: blue;
+
     }
 
     [tag="input"] {
@@ -31,7 +31,7 @@
       bottom: 200px;
       left: 0;
       right: 200px;
-      background-color: green;
+
     }
 
     [tag="timer"] {
@@ -40,7 +40,7 @@
       bottom: 0;
       right: 0;
       width: 200px;
-      background-color: yellow;
+
     }
 
     [tag="feedback"] {
@@ -49,7 +49,7 @@
       height: 200px;
       left: 0;
       right: 200px;
-      background-color: purple;
+
     }
 
   </style>
@@ -59,7 +59,9 @@
   </div>
   <div tag="container">
     <div tag="problem"></div>
-    <div tag="input"></div>
+    <div tag="input">
+      <span tag="input-display"></span>
+    </div>
     <div tag="timer"></div>
     <div tag="feedback"></div>
   </div>

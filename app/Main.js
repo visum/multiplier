@@ -8,10 +8,10 @@ BASE.require([
     var game = new app.Game();
     var $title = $(tags['title']);
 
-    var gameObserver = game.observe();
-
+    var noticeObserver = game.observeType("notice", function(e){
+      $title.text(e.message);
+    });
     
-
     scope.set("game", game);
 
     game.start();
