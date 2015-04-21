@@ -14,6 +14,8 @@ BASE.require([
     self.states = {};
     BASE.util.Observable.call(self);
     app.gameStates.defaultState.call(self);
+    app.gameStates.runningState.call(self);
+    app.gameStates.pausedState.call(self);
 
     self.start = function(){
       var args = Array.prototype.slice.call(arguments, 0);

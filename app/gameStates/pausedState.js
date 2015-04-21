@@ -15,6 +15,6 @@ app.gameStates.pausedState = function(){
 
   fn.reset = function(){};
 
-  self.states["defaultState"] = fn;
+  self.states["pausedState"] = fn;
 
 };

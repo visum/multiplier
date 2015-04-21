@@ -7,6 +7,7 @@ app.gameStates.defaultState = function(){
 
   fn.start = function(){
     self.notify({type:"notice", message:"Started!"});
+    self.state = "runningState";
   };
 
   fn.pause = function(){};

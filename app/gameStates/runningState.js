@@ -5,16 +5,16 @@ app.gameStates.runningState = function(){
 
   var fn = {};
 
-  fn.start = function(){
-
-  };
+  fn.start = function(){};
 
   fn.pause = function(){};
 
-  fn.input = function(){};
+  fn.input = function(char){
+    self.notify({type:"notice", message:char})
+  };
 
   fn.reset = function(){};
 
-  self.states["defaultState"] = fn;
+  self.states["runningState"] = fn;
 
 };
