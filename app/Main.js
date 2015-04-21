@@ -25,7 +25,8 @@ BASE.require([
       }
     });
 
-    game.start();
+    $(elem).on("enteredView", game.start);
+
   }
 
 });

@@ -8,6 +8,8 @@ app.gameStates.defaultState = function(){
   fn.start = function(){
     self.notify({type:"notice", message:"Started!"});
     self.state = "runningState";
+    // The kick-off!
+    self.states[self.state].newProblem();
   };
 
   fn.pause = function(){};
@@ -15,6 +17,7 @@ app.gameStates.defaultState = function(){
   fn.input = function(){};
 
   fn.reset = function(){};
+  fn.newProblem = function(){};
 
   self.states["defaultState"] = fn;
 
